@@ -1,0 +1,15 @@
+CXX = gcc
+CFLAGS = -g
+
+Obj = twosum.out
+Src = two_sum.c
+
+vpath %.c .
+
+$(Obj): $(Src)
+	$(CXX) $(CFLAGS) -o $@ $^
+
+.PHONY: clean
+
+clean:
+	-rm $(Obj)
