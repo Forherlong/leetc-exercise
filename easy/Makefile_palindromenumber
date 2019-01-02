@@ -1,0 +1,12 @@
+CXX = gcc -g
+CFLAGS = 
+Obj = pn
+Src = palindrome_number.c
+
+$(Obj): $(Src)
+	$(CXX) -o $@ $^
+
+.PHONY: clean
+
+clean:
+	-rm $(Obj)
