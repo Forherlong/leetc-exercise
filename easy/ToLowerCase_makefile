@@ -1,0 +1,13 @@
+CXX = g++ -g
+CFLAGE =
+
+Object = ToLowerCase
+Src = ToLowerCase.c
+
+$(Object):$(Src)
+	$(CXX) -o $(Object) $(Src)
+
+.PHONY: clean
+
+clean:
+	-rm -rf $(Object)
